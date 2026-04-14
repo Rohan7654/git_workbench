@@ -1,9 +1,11 @@
 # Git Workbench
 
-[![PyPI version](https://img.shields.io/pypi/v/git-workbench.svg)](https://pypi.org/project/git-workbench/)
-[![Python versions](https://img.shields.io/pypi/pyversions/git-workbench.svg)](https://pypi.org/project/git-workbench/)
-[![Downloads](https://static.pepy.tech/badge/git-workbench)](https://pepy.tech/project/git-workbench)
-[![Downloads per month](https://static.pepy.tech/badge/git-workbench/month)](https://pepy.tech/project/git-workbench)
+[![PyPI version](https://img.shields.io/pypi/v/git-workbench?logo=pypi&color=3775A9)](https://pypi.org/project/git-workbench/)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-2bbc8a?logo=python&logoColor=white)](https://pypi.org/project/git-workbench/)
+[![PyPI status](https://img.shields.io/pypi/status/git-workbench?color=success)](https://pypi.org/project/git-workbench/)
+[![License](https://img.shields.io/pypi/l/git-workbench?color=orange)](https://pypi.org/project/git-workbench/)
+[![Downloads](https://static.pepy.tech/badge/git-workbench?color=blue)](https://pepy.tech/project/git-workbench)
+[![Downloads/month](https://static.pepy.tech/badge/git-workbench/month?color=brightgreen)](https://pepy.tech/project/git-workbench)
 
 Git Workbench is a powerful, professional CLI suite designed to enhance your Git and GitHub workflow. It provides a set of interactive tools to simplify common tasks, enforce conventions, and visualize repository data.
 
