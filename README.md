@@ -1,5 +1,10 @@
 # Git Workbench
 
+[![PyPI version](https://img.shields.io/pypi/v/git-workbench.svg)](https://pypi.org/project/git-workbench/)
+[![Python versions](https://img.shields.io/pypi/pyversions/git-workbench.svg)](https://pypi.org/project/git-workbench/)
+[![Downloads](https://static.pepy.tech/badge/git-workbench)](https://pepy.tech/project/git-workbench)
+[![Downloads per month](https://static.pepy.tech/badge/git-workbench/month)](https://pepy.tech/project/git-workbench)
+
 Git Workbench is a powerful, professional CLI suite designed to enhance your Git and GitHub workflow. It provides a set of interactive tools to simplify common tasks, enforce conventions, and visualize repository data.
 
 ## Features
