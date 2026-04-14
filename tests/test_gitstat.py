@@ -1,27 +1,27 @@
 import pytest
 from unittest.mock import MagicMock, patch
 from datetime import datetime
-from git_assist.utils.git_helpers import GitHelper, CommitInfo
+from git_workbench.utils.git_helpers import GitHelper, CommitInfo
 
-@patch("git_assist.utils.git_helpers.GitHelper.run_command")
+@patch("git_workbench.utils.git_helpers.GitHelper.run_command")
 def test_is_git_repo_true(mock_run):
     mock_run.return_value = (True, ".git")
     assert GitHelper.is_git_repo() is True
 
-@patch("git_assist.utils.git_helpers.GitHelper.run_command")
+@patch("git_workbench.utils.git_helpers.GitHelper.run_command")
 def test_is_git_repo_false(mock_run):
     mock_run.return_value = (False, "fatal: not a git repository")
     assert GitHelper.is_git_repo() is False
 
-@patch("git_assist.utils.git_helpers.GitHelper.run_command")
+@patch("git_workbench.utils.git_helpers.GitHelper.run_command")
 def test_get_current_branch(mock_run):
     mock_run.return_value = (True, "main")
     assert GitHelper.get_current_branch() == "main"
 
-@patch("git_assist.utils.git_helpers.GitHelper.get_commits")
-@patch("git_assist.utils.git_helpers.GitHelper.get_contributors")
-@patch("git_assist.utils.git_helpers.GitHelper.get_all_branches")
-@patch("git_assist.utils.git_helpers.GitHelper.run_command")
+@patch("git_workbench.utils.git_helpers.GitHelper.get_commits")
+@patch("git_workbench.utils.git_helpers.GitHelper.get_contributors")
+@patch("git_workbench.utils.git_helpers.GitHelper.get_all_branches")
+@patch("git_workbench.utils.git_helpers.GitHelper.run_command")
 def test_get_repo_stats(mock_run, mock_branches, mock_contributors, mock_commits):
     # Mock return values
     mock_run.side_effect = [

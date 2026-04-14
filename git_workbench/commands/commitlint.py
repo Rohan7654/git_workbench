@@ -5,8 +5,8 @@ from rich.panel import Panel
 from rich.table import Table
 from rich import box
 
-from git_assist.utils.git_helpers import GitHelper
-from git_assist.utils.ui_helpers import UIHelper
+from git_workbench.utils.git_helpers import GitHelper
+from git_workbench.utils.ui_helpers import UIHelper
 
 console = Console()
 

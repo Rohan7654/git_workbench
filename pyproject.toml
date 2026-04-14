@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "git_assist"
+name = "git_workbench"
 version = "1.0.0"
 description = "A comprehensive Git & GitHub assistant"
 authors = [
@@ -33,11 +33,11 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Rohan7654/git_assist"
-Repository = "https://github.com/Rohan7654/git_assist"
-Issues = "https://github.com/Rohan7654/git_assist/issues"
-Documentation = "https://github.com/Rohan7654/git_assist#readme"
+Homepage = "https://github.com/Rohan7654/git_workbench"
+Repository = "https://github.com/Rohan7654/git_workbench"
+Issues = "https://github.com/Rohan7654/git_workbench/issues"
+Documentation = "https://github.com/Rohan7654/git_workbench#readme"
 
 [project.scripts]
-git_assist = "git_assist.main:cli"
-ga = "git_assist.main:cli"
+git_workbench = "git_workbench.main:cli"
+gw = "git_workbench.main:cli"

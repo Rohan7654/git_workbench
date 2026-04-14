@@ -1,5 +1,5 @@
 import pytest
-from git_assist.commands.commitlint import validate_commit
+from git_workbench.commands.commitlint import validate_commit
 
 def test_validate_commit_valid_feat():
     result = validate_commit("feat: add user login")

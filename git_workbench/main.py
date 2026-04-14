@@ -3,7 +3,7 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.text import Text
 
-from git_assist.commands import (
+from git_workbench.commands import (
     basics,
     gitclean,
     gitstat,
@@ -20,14 +20,14 @@ CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
 
 class BannerGroup(click.Group):
     def format_help(self, ctx, formatter):
-        from git_assist.utils.ui_helpers import UIHelper
+        from git_workbench.utils.ui_helpers import UIHelper
         from rich.table import Table
         from rich import box
 
         UIHelper.print_banner()
 
         UIHelper.print_header(
-            "Git Assist Help", "A comprehensive Git & GitHub assistant"
+            "Git Workbench Help", "A professional Git & GitHub workspace"
         )
 
         console.print("\n[bold cyan]Available Commands:[/bold cyan]")
@@ -49,20 +49,20 @@ class BannerGroup(click.Group):
         console.print(table)
 
         console.print("\n[bold yellow]Usage:[/bold yellow]")
-        console.print("  ga [cyan][COMMAND][/cyan] [args...]")
-        console.print("  ga [cyan]--help[/cyan] / [cyan]-h[/cyan]")
+        console.print("  gw [cyan][COMMAND][/cyan] [args...]")
+        console.print("  gw [cyan]--help[/cyan] / [cyan]-h[/cyan]")
         console.print(
-            "\nRun '[cyan]ga COMMAND --help[/cyan]' for more information on a specific command.\n"
+            "\nRun '[cyan]gw COMMAND --help[/cyan]' for more information on a specific command.\n"
         )
 
 
 @click.group(
     cls=BannerGroup, invoke_without_command=True, context_settings=CONTEXT_SETTINGS
 )
-@click.version_option(version="1.0.0", prog_name="Git Assist")
+@click.version_option(version="1.0.0", prog_name="Git Workbench")
 @click.pass_context
 def cli(ctx):
-    """Git Assist - A comprehensive Git & GitHub assistant
+    """Git Workbench - A comprehensive Git & GitHub workspace
 
     A collection of powerful tools to enhance your Git workflow.
     """
@@ -90,9 +90,9 @@ def menu():
     import inquirer
 
     # Banner is handled by cli() now for subcommands
-    from git_assist.utils.ui_helpers import UIHelper
+    from git_workbench.utils.ui_helpers import UIHelper
 
-    UIHelper.print_header("Git Assist Suite", "Select a tool to get started")
+    UIHelper.print_header("Git Workbench Suite", "Select a tool to get started")
 
     choices = [
         ("Git Basics - Learn & execute basic git commands", "basics"),

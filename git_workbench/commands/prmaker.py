@@ -4,9 +4,9 @@ from rich.panel import Panel
 from rich.syntax import Syntax
 import pyperclip
 
-from git_assist.utils.git_helpers import GitHelper
-from git_assist.utils.ui_helpers import UIHelper
-from git_assist.templates.pr_templates import PRTemplates
+from git_workbench.utils.git_helpers import GitHelper
+from git_workbench.utils.ui_helpers import UIHelper
+from git_workbench.templates.pr_templates import PRTemplates
 
 console = Console()
 
